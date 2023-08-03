@@ -42,9 +42,4 @@ public class MessageController {
         repository.save(userInfo);
         System.out.println("user added");
     }
-
-    @GetMapping("/oauth2")
-    public String oauth(){
-        return "User authenticated via OAuth from github";
-    }
 }
